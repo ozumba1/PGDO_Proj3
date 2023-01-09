@@ -1,6 +1,5 @@
-FROM openjdk:11-jdk-alpine
-VOLUME /tmp
-ADD target/devOpsDemo-0.0.1-SNAPSHOT.jar app.jar
+FROM openjdk:11
+ADD target/devOpsDemo.jar devOpsDemo.jar
 
 ENTRYPOINT ["java","-jar","app.jar"]
 
